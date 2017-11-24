@@ -1,0 +1,55 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script>
+	$(function() {
+		$('#id_date_of_birth').datepicker();
+	} );
+</script>
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+<title>Example Form</title>
+
+</head>
+
+<body>
+
+{% block 'content' %}
+<div id="site_content">
+	<div id="form_title">Complete your personal data:</div>
+	<form method="POST" action="/effect/views">
+	{% csrf_token %}
+		<table>
+			{{ form.as_table }}
+		</table>
+	<input type="submit" id="send_form" value="Send Form">
+	</form>
+</div>
+<div id="footer">2017 &copy; Bartosz Stefański</div>
+<script>
+	function pressSendForm() {
+		$('#send_form').css('border-style', 'inset');
+		$('#send_form').css('color', '#888');
+	};
+	function unpressSendForm() {
+		$('#send_form').css('border-style', 'outset');
+		$('#send_form').css('color', '#000');
+	};
+	
+	$('#send_form').click(function() {
+		pressSendForm();
+		setTimeout(unpressSendForm,200);
+	} );
+</script>
+{% endblock %}
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<link rel="stylesheet" href="{% static 'css/effect.css' %}">
+<title>Menu</title>
+
+</head>
+
+<body>
+
+{% block 'content' %}
+<div id="site_content">
+	<a href="{% static 'pdfs/example_file1.pdf' %}" target="blank" class="btAction" id="goPdf">Open PDF file</a>
+	<a href="/" class="btAction" id="goIndex">Complete the form again</a>
+</div>
+<div id="footer">2017 &copy; Bartosz Stefański</div>
+{% endblock %}
+
+</body>
+
+</html>

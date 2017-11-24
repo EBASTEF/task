@@ -1,0 +1,76 @@
+body
+{
+	background-image:url('css-graphics/form_background.jpg')
+}
+
+table
+{
+	width:90%;
+	margin:3% auto;
+}
+
+td
+{
+	padding:2%;
+}
+
+input, #id_your_continent
+{
+	width:70%;
+	padding:3% 5%;
+	border-style:inset;
+	border-width:2px;
+	border-color:#555;
+	border-radius:25px;
+	box-shadow:5px 5px 5px #08F;
+	outline:0;
+}
+
+input[type=submit]
+{
+	background-color:#DDDDDDFF;
+	width:40%;
+	margin-bottom:5%;
+	padding:1%;
+	border-style:outset;
+	outline:0;
+}
+
+#id_your_continent
+{
+	background-color:#DDDDDDFF;
+	border-style:outset;
+}
+
+#site_content
+{
+	background-color:#99999988;
+	width:80%;
+	margin:5% auto;
+	padding-top:5%;
+	text-align:center;
+	border-style:outset;
+	border-width:5px;
+	border-color:#BBB;
+	border-radius:45px;
+}
+
+#form_title
+{
+	font-size:150%;
+	font-weight:bold;
+	font-style:italic;
+}
+
+
+
+
+
+#footer
+{
+	float:left;
+	width:100%;
+	margin-bottom:2%;
+	text-align:center;
+	color:#222;	
+}
