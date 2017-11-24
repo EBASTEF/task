@@ -1,0 +1,13 @@
+Recommended requirements:
+    Python 2.7.2
+    Django 1.11.7
+    Celery 3.1.25
+    Kombu 3.0.37
+    ReportLab 3.4.0
+
+
+
+Tested with browsers:
+    Opera (v.12.16/1860)
+    Chromium (v.62.0.3202.89)
+    Mozilla Firefox (v.57.0)
